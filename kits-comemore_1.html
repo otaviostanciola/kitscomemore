@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kits Comemore – Salgadinhos, Doces e Bolos em Viçosa MG</title>
+<meta name="description" content="Kits prontos para festas em Viçosa MG. Salgadinhos, doces gourmet, bolos vulcão e tortas artesanais. Encomende pelo WhatsApp!">
+<meta name="keywords" content="kits festa Viçosa MG, salgadinhos Viçosa, doces gourmet Viçosa, bolo vulcão Viçosa, encomenda festa Viçosa Minas Gerais, kit festa Viçosa">
+<meta property="og:title" content="Kits Comemore – Kits de Festa em Viçosa MG">
+<meta property="og:description" content="Salgadinhos, doces e bolos artesanais para sua festa em Viçosa MG">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "name": "Kits Comemore",
+  "address": {"@type": "PostalAddress", "addressLocality": "Viçosa", "addressRegion": "MG", "addressCountry": "BR"},
+  "telephone": "+5531999613941",
+  "servesCuisine": "Brazilian Party Food",
+  "sameAs": "https://www.instagram.com/kitscomemore/",
+  "url": "https://wa.me/message/HJMCX66AEZMXF1"
+}
+</script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream: #FAFAE0;
+  --gold: #F5C218;
+  --wine: #7B1230;
+  --text: #2A1010;
+  --white: #FFFFFF;
+  --shadow: 0 4px 20px rgba(123,18,48,0.12);
+  --shadow-lg: 0 8px 32px rgba(123,18,48,0.18);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+
+img { max-width: 100%; display: block; }
+
+a { text-decoration: none; color: inherit; }
+
+/* ===== ANIMATIONS ===== */
+@keyframes bounce-in {
+  0% { opacity: 0; transform: scale(0.7) translateY(-30px); }
+  60% { transform: scale(1.08) translateY(4px); }
+  80% { transform: scale(0.97); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse-cta {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(123,18,48,0.4); }
+  50% { box-shadow: 0 0 0 10px rgba(123,18,48,0); }
+}
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4), 0 0 0 0 rgba(37,211,102,0.4); }
+  50% { box-shadow: 0 4px 20px rgba(37,211,102,0.5), 0 0 0 12px rgba(37,211,102,0); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: var(--wine);
+  background-image: radial-gradient(circle, rgba(245,194,24,0.08) 1px, transparent 1px);
+  background-size: 22px 22px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+.hero-inner {
+  padding: 48px 20px 0;
+  text-align: center;
+}
+.hero-logo {
+  animation: bounce-in 0.8s cubic-bezier(.36,.07,.19,.97) both;
+}
+.hero-logo .comemore {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: 2px;
+  line-height: 1;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+.hero-logo .menu-tag {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+.hero-tagline {
+  animation: fade-up 0.7s ease 0.35s both;
+  margin-top: 20px;
+}
+.hero-tagline h2 {
+  font-size: 1.35rem;
+  color: var(--gold);
+  font-weight: 700;
+  line-height: 1.3;
+}
+.hero-tagline p {
+  color: rgba(255,255,255,0.88);
+  font-size: 0.95rem;
+  margin-top: 10px;
+  line-height: 1.6;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-cta-wrap {
+  animation: fade-up 0.7s ease 0.6s both;
+  margin-top: 24px;
+}
+.btn-primary {
+  display: inline-block;
+  background: var(--wine);
+  color: var(--white);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 16px 28px;
+  border-radius: 999px;
+  border: 2px solid var(--gold);
+  cursor: pointer;
+  min-height: 52px;
+  animation: pulse-cta 2s ease 1.2s 2;
+  transition: transform 0.2s, background 0.2s;
+}
+.btn-primary:hover, .btn-primary:active {
+  transform: scale(1.04);
+  background: #5a0d22;
+}
+.btn-gold {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--wine);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 16px 28px;
+  border-radius: 999px;
+  cursor: pointer;
+  min-height: 52px;
+  transition: transform 0.2s, background 0.2s;
+}
+.btn-gold:hover, .btn-gold:active {
+  transform: scale(1.04);
+  background: #e8b400;
+}
+.hero-img-wrap {
+  margin-top: 28px;
+  animation: fade-up 0.8s ease 0.5s both;
+}
+.hero-img-wrap img {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  max-height: 320px;
+}
+
+/* ===== WAVE DIVIDERS ===== */
+.wave-down {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.wave-down svg { display: block; width: 100%; }
+
+/* ===== SECTIONS ===== */
+section { padding: 48px 20px; }
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--wine);
+  text-align: center;
+  margin-bottom: 32px;
+  line-height: 1.2;
+}
+.section-title.xl { font-size: 2.4rem; }
+
+/* ===== WHY CARDS ===== */
+.why-scroll {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 8px;
+}
+.why-scroll::-webkit-scrollbar { display: none; }
+.why-card {
+  flex: 0 0 200px;
+  background: var(--white);
+  border: 3px solid var(--wine);
+  border-radius: 16px;
+  padding: 24px 16px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.why-card .icon { font-size: 2.2rem; margin-bottom: 10px; }
+.why-card h3 { font-size: 1rem; color: var(--wine); margin-bottom: 6px; font-weight: 800; font-family: 'Nunito', sans-serif; }
+.why-card p { font-size: 0.85rem; color: var(--text); line-height: 1.4; }
+
+/* ===== CAROUSEL ===== */
+.carousel {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 8px;
+  margin: 0 -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.carousel::-webkit-scrollbar { display: none; }
+.carousel-img {
+  flex: 0 0 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 3px solid var(--wine);
+  box-shadow: var(--shadow);
+}
+
+/* ===== PRICE CARDS ===== */
+.price-row {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+.price-card {
+  flex: 1;
+  background: var(--white);
+  border: 3px solid var(--wine);
+  border-radius: 16px;
+  padding: 16px 10px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  max-width: 120px;
+}
+.price-card .size { font-weight: 800; font-size: 1.2rem; color: var(--wine); }
+.price-card .desc { font-size: 0.78rem; color: #555; margin: 4px 0; line-height: 1.3; }
+.price-card .price { font-weight: 800; font-size: 1rem; color: var(--text); margin-top: 6px; }
+
+/* ===== PILLS ===== */
+.pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.pill {
+  background: var(--wine);
+  color: var(--white);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.pill-gold {
+  background: var(--gold);
+  color: var(--wine);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* ===== DESTAQUE CARD ===== */
+.destaque-card {
+  background: var(--cream);
+  border: 3px solid var(--wine);
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 24px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.destaque-card .label { font-size: 1.1rem; font-weight: 800; color: var(--wine); }
+.destaque-card .sub { font-size: 0.9rem; color: #555; margin: 6px 0; }
+.destaque-card .price-big { font-size: 1.5rem; font-weight: 800; color: var(--text); }
+
+/* ===== SWEET SUBSECTIONS ===== */
+.sweet-block {
+  background: var(--white);
+  border: 3px solid var(--wine);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 20px;
+  box-shadow: var(--shadow);
+}
+.sweet-block-header {
+  background: var(--wine);
+  color: var(--white);
+  padding: 14px 20px;
+  font-weight: 800;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sweet-block-header .price { font-size: 0.9rem; opacity: 0.9; }
+.sweet-block-body { padding: 16px 20px; }
+
+/* ===== KIT CARDS ===== */
+.kit-card {
+  background: var(--white);
+  border: 3px solid var(--wine);
+  border-left: 7px solid var(--wine);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.kit-card .kit-name { font-size: 1.15rem; font-weight: 800; color: var(--wine); }
+.kit-card .kit-sub { font-size: 0.85rem; color: #555; margin: 6px 0 10px; }
+.kit-price-badge {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--wine);
+  font-weight: 800;
+  font-size: 1.1rem;
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-top: 8px;
+}
+.kit-price-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.kit-price-opt {
+  background: var(--cream);
+  border: 2px solid var(--wine);
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+.kit-price-opt .opt-label { color: #555; font-weight: 600; }
+.kit-price-opt .opt-val { color: var(--wine); font-size: 0.95rem; }
+
+/* ===== FINAL CTA BANNER ===== */
+.cta-banner {
+  background: var(--gold);
+  padding: 52px 24px;
+  text-align: center;
+}
+.cta-banner h2 {
+  font-size: 2rem;
+  color: var(--wine);
+  margin-bottom: 10px;
+}
+.cta-banner p { color: var(--wine); font-size: 1rem; margin-bottom: 28px; font-weight: 600; }
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--wine);
+  color: var(--white);
+  text-align: center;
+  padding: 36px 20px;
+}
+footer a { color: var(--gold); }
+footer p { font-size: 0.9rem; margin: 6px 0; }
+
+/* ===== FLOATING WA ===== */
+.wa-float {
+  position: fixed;
+  bottom: 24px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wa-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  animation: wa-pulse 3s ease infinite;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+.wa-btn svg { flex-shrink: 0; }
+.wa-label {
+  background: #25D366;
+  color: var(--white);
+  font-weight: 800;
+  font-size: 0.88rem;
+  padding: 0 14px;
+  border-radius: 999px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+}
+.wa-float:hover .wa-label, .wa-float:active .wa-label {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ===== BG SECTIONS ===== */
+.bg-white-section { background: var(--white); }
+.bg-cream-section { background: var(--cream); }
+
+/* ===== DESKTOP ===== */
+@media (min-width: 768px) {
+  .hero-inner { max-width: 600px; margin: 0 auto; }
+  .hero-logo .comemore { font-size: 4rem; }
+  .why-card { flex: 0 0 240px; }
+  .carousel-img { flex: 0 0 280px; height: 280px; }
+  .price-row { justify-content: center; gap: 16px; }
+  .price-card { max-width: 150px; padding: 20px 16px; }
+  section { padding: 64px 32px; }
+  .section-title { font-size: 2.4rem; }
+  .section-title.xl { font-size: 3rem; }
+  .kit-price-row { flex-wrap: nowrap; }
+}
+
+/* ===== SECTION BACKGROUNDS ===== */
+#section-why { background: var(--white); }
+#section-bolos { background: var(--cream); }
+#section-tortas { background: var(--white); }
+#section-doces { background: var(--cream); }
+#section-salgados { background: var(--white); }
+#section-kits { background: var(--cream); }
+
+.section-intro { text-align: center; color: #555; margin-bottom: 24px; font-size: 0.95rem; }
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-logo">
+      <div class="comemore">comemore</div>
+      <div class="menu-tag">Menu</div>
+    </div>
+    <div class="hero-tagline">
+      <h2>Kits prontos para a sua festa em Viçosa MG 🎉</h2>
+      <p>Salgadinhos, doces gourmet, bolos vulcão e tortas feitas com carinho para tornar sua comemoração inesquecível.</p>
+    </div>
+    <div class="hero-cta-wrap">
+      <a href="https://wa.me/message/HJMCX66AEZMXF1" class="btn-primary">Fazer meu pedido no WhatsApp 🎉</a>
+    </div>
+    <div class="hero-img-wrap">
+      <img src="https://i.ibb.co/ycR8zTwL/Whats-App-Image-2026-04-19-at-12-38-13.jpg" alt="Bolo vulcão brigadeiro com caixa de docinhos Comemore em Viçosa MG" loading="eager">
+    </div>
+  </div>
+</div>
+
+<!-- wave -->
+<div class="wave-down">
+<svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#FFFFFF"/></svg>
+</div>
+
+<!-- ===== WHY ===== -->
+<section id="section-why">
+  <h2 class="section-title reveal">Por que a Comemore? 💛</h2>
+  <div class="why-scroll">
+    <div class="why-card reveal" style="transition-delay:0.1s">
+      <div class="icon">🎂</div>
+      <h3>Tudo artesanal</h3>
+      <p>Feito com amor em Viçosa MG, ingrediente por ingrediente</p>
+    </div>
+    <div class="why-card reveal" style="transition-delay:0.2s">
+      <div class="icon">📦</div>
+      <h3>Kit completo</h3>
+      <p>Salgado, doce e bolo em um só pedido — sem complicação</p>
+    </div>
+    <div class="why-card reveal" style="transition-delay:0.3s">
+      <div class="icon">💬</div>
+      <h3>Fácil de pedir</h3>
+      <p>Só mandar mensagem no WhatsApp e a gente resolve tudo</p>
+    </div>
+  </div>
+</section>
+
+<!-- wave -->
+<div class="wave-down" style="background:#FFFFFF">
+<svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,20 C360,60 720,0 1080,40 C1260,55 1380,10 1440,20 L1440,60 L0,60 Z" fill="#FAFAE0"/></svg>
+</div>
+
+<!-- ===== BOLOS VULCÃO ===== -->
+<section id="section-bolos">
+  <h2 class="section-title reveal">Bolo Vulcão 🎂</h2>
+  <p class="section-intro reveal">Irresistíveis por dentro, deslumbrantes por fora</p>
+
+  <div class="carousel">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/7tx3L8Dg/Whats-App-Image-2026-04-19-at-12-38-23.jpg" alt="Bolo vulcão brigadeiro com morango e caixa de docinhos Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/ZRmj8Df8/Whats-App-Image-2026-04-19-at-12-38-25-2.jpg" alt="Bolo vulcão ninho com morango e beijinho Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/C5TVmJpq/Whats-App-Image-2026-04-19-at-12-38-25.jpg" alt="Bolo vulcão ninho morango vista superior Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/Qv4MNK5z/Whats-App-Image-2026-04-19-at-12-38-25-1.jpg" alt="Bolo vulcão ninho com morango e brigadeiro branco Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/fdyVbdpV/Whats-App-Image-2026-04-19-at-12-38-24.jpg" alt="Bolo vulcão chocolate com ganache branco e morango Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/HpHMqPp3/Whats-App-Image-2026-04-19-at-12-38-10.jpg" alt="Bolo vulcão brigadeiro com ganache ao leite e morango Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/VWNdfK1P/Whats-App-Image-2026-04-19-at-12-38-10-1.jpg" alt="Bolo vulcão ninho branco com morangos espalhados Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/bMpmcb59/Whats-App-Image-2026-04-19-at-12-38-10-2.jpg" alt="Bolo vulcão ganache duplo chocolate branco com brigadeiros Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/NgJvs6Ph/Whats-App-Image-2026-04-19-at-12-38-12.jpg" alt="Bolo vulcão chocolate cobertura ganache com morango Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/LdpZmhBK/Whats-App-Image-2026-04-19-at-12-38-08-1.jpg" alt="Bolos vulcão brigadeiro rosa e azul para festas Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/0pK1Sw7x/Whats-App-Image-2026-04-19-at-12-38-09-1.jpg" alt="Bolo vulcão ninho morango artesanal Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/212h75TX/Whats-App-Image-2026-04-19-at-12-38-09.jpg" alt="Bolo vulcão choconinho com ganache escorrendo Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/Y7xCsZ63/Whats-App-Image-2026-04-19-at-12-38-08.jpg" alt="Bolo vulcão ninho decorado para chá de bebê Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/Zp5f3dsc/Whats-App-Image-2026-04-19-at-12-38-07-1.jpg" alt="Bolo vulcão ninho morangos brancos Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/HpNzBKbX/Whats-App-Image-2026-04-19-at-12-38-07.jpg" alt="Bolo vulcão aniversário chocolate morango Kits Comemore Viçosa MG" loading="lazy">
+  </div>
+
+  <div class="price-row" style="margin-top:28px">
+    <div class="price-card reveal" style="transition-delay:0.1s">
+      <div class="size">P</div>
+      <div class="desc">10 pessoas</div>
+      <div class="price">R$ 60</div>
+    </div>
+    <div class="price-card reveal" style="transition-delay:0.2s">
+      <div class="size">M</div>
+      <div class="desc">20 pessoas</div>
+      <div class="price">R$ 80</div>
+    </div>
+    <div class="price-card reveal" style="transition-delay:0.3s">
+      <div class="size">G</div>
+      <div class="desc">25 pessoas</div>
+      <div class="price">R$ 100</div>
+    </div>
+  </div>
+
+  <div class="reveal" style="margin-top:20px">
+    <p style="font-weight:700; color:var(--wine); margin-bottom:8px;">Sabores disponíveis:</p>
+    <div class="pills">
+      <span class="pill">Brigadeiro</span>
+      <span class="pill">Ninho</span>
+      <span class="pill">Ninho com Nutella</span>
+      <span class="pill">Chocolate branco com geleia de morango</span>
+      <span class="pill">Crocante de paçoca</span>
+      <span class="pill">Beijinho</span>
+      <span class="pill">Ganache com morango</span>
+      <span class="pill">Choconinho</span>
+    </div>
+  </div>
+</section>
+
+<!-- wave -->
+<div class="wave-down" style="background:#FAFAE0">
+<svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C320,0 640,60 960,20 C1120,0 1300,50 1440,30 L1440,60 L0,60 Z" fill="#FFFFFF"/></svg>
+</div>
+
+<!-- ===== TORTAS ===== -->
+<section id="section-tortas">
+  <h2 class="section-title reveal">Tortas 🥧</h2>
+
+  <div class="carousel">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/q3Cn166C/Whats-App-Image-2026-04-19-at-12-38-14.jpg" alt="Torta de frango e catupiry artesanal Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/1GWjCbPD/Whats-App-Image-2026-04-19-at-12-38-15.jpg" alt="Torta abacaxi com coco Kits Comemore Viçosa MG" loading="lazy">
+  </div>
+
+  <div class="price-row" style="margin-top:28px">
+    <div class="price-card reveal" style="transition-delay:0.1s">
+      <div class="size">P</div>
+      <div class="desc">1 kg</div>
+      <div class="price">R$ 130</div>
+    </div>
+    <div class="price-card reveal" style="transition-delay:0.2s">
+      <div class="size">M</div>
+      <div class="desc">2 kg</div>
+      <div class="price">R$ 190</div>
+    </div>
+    <div class="price-card reveal" style="transition-delay:0.3s">
+      <div class="size">G</div>
+      <div class="desc">3 kg</div>
+      <div class="price">R$ 260</div>
+    </div>
+  </div>
+
+  <div class="reveal" style="margin-top:20px">
+    <p style="font-weight:700; color:var(--wine); margin-bottom:8px;">Sabores disponíveis:</p>
+    <div class="pills">
+      <span class="pill">Abacaxi com coco</span>
+      <span class="pill">Ninho com geleia de morango</span>
+      <span class="pill">Matilda</span>
+      <span class="pill">Olho de sogra</span>
+      <span class="pill">Brigadeiro</span>
+      <span class="pill">Mousse de maracujá</span>
+    </div>
+  </div>
+
+  <div class="destaque-card reveal" style="margin-top:28px">
+    <div class="label">🥧 Torta de Frango e Catupiry</div>
+    <div class="sub">Serve até 8 pessoas</div>
+    <div class="price-big">R$ 69,90</div>
+  </div>
+</section>
+
+<!-- wave -->
+<div class="wave-down" style="background:#FFFFFF">
+<svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,10 C200,50 500,0 720,35 C940,60 1200,5 1440,30 L1440,60 L0,60 Z" fill="#FAFAE0"/></svg>
+</div>
+
+<!-- ===== DOCES ===== -->
+<section id="section-doces">
+  <h2 class="section-title reveal">Doces 🍬</h2>
+
+  <div class="carousel">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/wZ3Q6T4G/Whats-App-Image-2026-04-19-at-12-38-19-2.jpg" alt="Brigadeiros gourmet pistache e paçoca Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/NnrRcVfy/Whats-App-Image-2026-04-19-at-12-38-19-1.jpg" alt="Brigadeiros gourmet variados Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/VW7RKhfh/Whats-App-Image-2026-04-19-at-12-38-19.jpg" alt="Docinhos moranguinho e leite ninho Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/n4bt7ym/Whats-App-Image-2026-04-19-at-12-38-18-1.jpg" alt="Docinhos variados cajuzinho brigadeiro Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/3mRR1Y69/Whats-App-Image-2026-04-19-at-12-38-18.jpg" alt="Docinhos leite ninho com ganache Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/67HWff7q/Whats-App-Image-2026-04-19-at-12-38-22-1.jpg" alt="Tortelete tropical com frutas frescas kiwi manga morango Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/0RW96QJT/Whats-App-Image-2026-04-19-at-12-38-12-1.jpg" alt="Caixa docinhos brigadeiro e leite ninho Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/qY0SZ24k/Whats-App-Image-2026-04-19-at-12-38-09-2.jpg" alt="Docinhos moranguinho fileira Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/fVRCBSZD/Whats-App-Image-2026-04-19-at-12-38-21-1.jpg" alt="Docinhos leite ninho moranguinho para chá de bebê Kits Comemore Viçosa MG" loading="lazy">
+  </div>
+
+  <div class="sweet-block reveal" style="margin-top:28px">
+    <div class="sweet-block-header">
+      <span>💎 Brigadeiros Gourmet</span>
+      <span class="price">R$ 160 / 100 und</span>
+    </div>
+    <div class="sweet-block-body">
+      <div class="pills">
+        <span class="pill">Tradicional</span><span class="pill">50% cacau</span><span class="pill">Branco</span><span class="pill">Pistache</span><span class="pill">Morango</span><span class="pill">Amarula</span><span class="pill">Paçoca</span><span class="pill">Branco e morango</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sweet-block reveal">
+    <div class="sweet-block-header">
+      <span>🍬 Docinhos</span>
+      <span class="price">R$ 130 / 100 und</span>
+    </div>
+    <div class="sweet-block-body">
+      <div class="pills">
+        <span class="pill">Leite ninho</span><span class="pill">Ninho com Nutella</span><span class="pill">Cajuzinho</span><span class="pill">Rocambole de prestígio</span><span class="pill">Beijinho</span><span class="pill">Moranguinho</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sweet-block reveal">
+    <div class="sweet-block-header">
+      <span>🥧 Tortelete Tropical</span>
+      <span class="price">R$ 200 / 100 und</span>
+    </div>
+    <div class="sweet-block-body">
+      <div class="pills">
+        <span class="pill">Creme branco</span><span class="pill">Ganache meio amargo</span><span class="pill">Ganache ao leite</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sweet-block reveal">
+    <div class="sweet-block-header">
+      <span>🍮 Pudim de Leite Ninho</span>
+      <span class="price">R$ 45,00</span>
+    </div>
+    <div class="sweet-block-body">
+      <div class="pills">
+        <span class="pill-gold">Calda de caramelo</span><span class="pill-gold">Calda de chocolate</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- wave -->
+<div class="wave-down" style="background:#FAFAE0">
+<svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,30 C300,60 600,0 900,40 C1100,65 1300,10 1440,25 L1440,60 L0,60 Z" fill="#FFFFFF"/></svg>
+</div>
+
+<!-- ===== SALGADINHOS ===== -->
+<section id="section-salgados">
+  <h2 class="section-title reveal">Salgadinhos 🥐</h2>
+
+  <div class="carousel">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/tMxq5Pj3/Whats-App-Image-2026-04-19-at-12-38-15-1.jpg" alt="Pão de queijo artesanal para festas Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/YFp1dTZd/Whats-App-Image-2026-04-19-at-12-38-17.jpg" alt="Mini pizza margherita artesanal para festas Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/YBCMmVhr/Whats-App-Image-2026-04-19-at-12-38-17-1.jpg" alt="Mini pizza presunto e pão de queijo salgadinhos festa Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/vvkLfFdq/Whats-App-Image-2026-04-19-at-12-38-16-1.jpg" alt="Pastéis de feira fritos salgadinhos Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/kT92tyd/Whats-App-Image-2026-04-19-at-12-38-16.jpg" alt="Coxinha quibe salgadinhos fritos festa Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/35SsCf5K/Whats-App-Image-2026-04-19-at-12-38-21.jpg" alt="Caixa salgadinhos sortidos pão de queijo quibe Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/Fk7J1fD0/Whats-App-Image-2026-04-19-at-12-38-20.jpg" alt="Kit festa salgadinhos e bolo vulcão Kits Comemore Viçosa MG" loading="lazy">
+    <img class="carousel-img reveal-scale" src="https://i.ibb.co/DfhK6VF1/Whats-App-Image-2026-04-19-at-12-38-26-1.jpg" alt="Kit festa completo bolo vulcão salgadinhos docinhos Kits Comemore Viçosa MG" loading="lazy">
+  </div>
+
+  <div style="display:flex; gap:14px; margin-top:28px; flex-wrap:wrap">
+    <div class="sweet-block reveal" style="flex:1; min-width:280px;">
+      <div class="sweet-block-header">
+        <span>🟡 Econômico</span>
+        <span class="price">R$ 100 / 100 und</span>
+      </div>
+      <div class="sweet-block-body">
+        <div class="pills">
+          <span class="pill">Coxinha de frango</span><span class="pill">Empadinha de frango</span><span class="pill">Quibe de queijo</span><span class="pill">Enroladinho de salsicha</span><span class="pill">Bolinha de queijo com alho poró</span><span class="pill">Crocante de milho</span><span class="pill">Pão de queijo</span><span class="pill">Mini pizza</span><span class="pill">Travesseiro</span>
+        </div>
+      </div>
+    </div>
+    <div class="sweet-block reveal" style="flex:1; min-width:280px;">
+      <div class="sweet-block-header" style="background:#5a0d22">
+        <span>🏆 Premium</span>
+        <span class="price">R$ 130 / 100 und</span>
+      </div>
+      <div class="sweet-block-body">
+        <div class="pills">
+          <span class="pill">Pastel de angu de carne</span><span class="pill">Bolinho de mandioca</span><span class="pill">Pastel de guaraná</span><span class="pill">Esfirra de carne</span><span class="pill">Mini pizza margherita</span><span class="pill">Frango com catupiry</span><span class="pill">Mini pastel de feira</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- wave -->
+<div class="wave-down" style="background:#FFFFFF">
+<svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,50 C180,10 420,60 720,20 C960,0 1260,55 1440,20 L1440,60 L0,60 Z" fill="#FAFAE0"/></svg>
+</div>
+
+<!-- ===== KITS FESTA ===== -->
+<section id="section-kits">
+  <h2 class="section-title xl reveal">Kits Festa 🎉</h2>
+  <p class="section-intro reveal">Monte a festa perfeita sem estresse — tudo em um kit só!</p>
+
+  <div class="reveal" style="margin-bottom:28px">
+    <img src="https://i.ibb.co/8gbxgRhY/Whats-App-Image-2026-04-19-at-12-38-26.jpg" alt="Kit festa completo bolo salgadinhos docinhos Kits Comemore Viçosa MG" loading="lazy" style="width:100%; border-radius:16px; border:3px solid var(--wine); box-shadow:var(--shadow-lg); object-fit:cover; max-height:280px;">
+  </div>
+
+  <!-- Kit 1 -->
+  <div class="kit-card reveal">
+    <div class="kit-name">🥂 Reuniãozinha Íntima</div>
+    <div class="kit-sub">Até 10 pessoas • 50 salgadinhos + 25 docinhos + 1 bolo vulcão P</div>
+    <div class="kit-price-badge">R$ 149,90</div>
+  </div>
+
+  <!-- Kit 2 -->
+  <div class="kit-card reveal">
+    <div class="kit-name">🎈 Reunião Íntima</div>
+    <div class="kit-sub">Até 10 pessoas • 100 salgadinhos + 50 docinhos + 1 bolo vulcão M</div>
+    <div class="kit-price-row">
+      <div class="kit-price-opt">
+        <div class="opt-label">Econômico</div>
+        <div class="opt-val">R$ 219,90</div>
+      </div>
+      <div class="kit-price-opt">
+        <div class="opt-label">Econômico + bebidas</div>
+        <div class="opt-val">R$ 235,90</div>
+      </div>
+      <div class="kit-price-opt">
+        <div class="opt-label">Premium</div>
+        <div class="opt-val">R$ 255,90</div>
+      </div>
+      <div class="kit-price-opt">
+        <div class="opt-label">Premium + bebidas</div>
+        <div class="opt-val">R$ 269,90</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kit 3 -->
+  <div class="kit-card reveal">
+    <div class="kit-name">🎊 Festinha</div>
+    <div class="kit-sub">Até 20 pessoas • 200 salgadinhos + 100 docinhos + 1 bolo vulcão G</div>
+    <div class="kit-price-row">
+      <div class="kit-price-opt">
+        <div class="opt-label">Econômico</div>
+        <div class="opt-val">R$ 395,90</div>
+      </div>
+      <div class="kit-price-opt">
+        <div class="opt-label">Econômico + bebidas</div>
+        <div class="opt-val">R$ 423,90</div>
+      </div>
+      <div class="kit-price-opt">
+        <div class="opt-label">Premium</div>
+        <div class="opt-val">R$ 428,90</div>
+      </div>
+      <div class="kit-price-opt">
+        <div class="opt-label">Premium + bebidas</div>
+        <div class="opt-val">R$ 456,90</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kit 4 -->
+  <div class="kit-card reveal">
+    <div class="kit-name">🥳 Festona</div>
+    <div class="kit-sub">Até 30 pessoas • 300 salgadinhos + 150 docinhos + 1 bolo vulcão GG</div>
+    <div class="kit-price-row">
+      <div class="kit-price-opt">
+        <div class="opt-label">Econômico</div>
+        <div class="opt-val">R$ 649,90</div>
+      </div>
+      <div class="kit-price-opt">
+        <div class="opt-label">Econômico + bebidas</div>
+        <div class="opt-val">R$ 689,90</div>
+      </div>
+      <div class="kit-price-opt">
+        <div class="opt-label">Premium</div>
+        <div class="opt-val">R$ 680,90</div>
+      </div>
+      <div class="kit-price-opt">
+        <div class="opt-label">Premium + bebidas</div>
+        <div class="opt-val">R$ 709,90</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reveal" style="margin-top:16px">
+    <p style="font-weight:700; color:var(--wine); margin-bottom:8px;">🥤 Bebidas disponíveis nos kits:</p>
+    <div class="pills">
+      <span class="pill-gold">Coca-Cola</span>
+      <span class="pill-gold">Guaraná Antártica</span>
+      <span class="pill-gold">Suco de uva</span>
+      <span class="pill-gold">Suco de manga</span>
+      <span class="pill-gold">Suco de goiaba</span>
+    </div>
+  </div>
+
+  <div class="reveal" style="text-align:center; margin-top:36px">
+    <p style="font-size:1.15rem; font-weight:800; color:var(--wine); margin-bottom:16px;">Monte o kit ideal para a sua festa!</p>
+    <a href="https://wa.me/message/HJMCX66AEZMXF1" class="btn-primary">Pedir meu kit agora 💬</a>
+  </div>
+</section>
+
+<!-- wave -->
+<div class="wave-down" style="background:#FAFAE0">
+<svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,20 C240,60 480,0 720,30 C960,60 1200,0 1440,20 L1440,60 L0,60 Z" fill="#F5C218"/></svg>
+</div>
+
+<!-- ===== FINAL CTA ===== -->
+<div class="cta-banner">
+  <h2 class="reveal">Pronta para comemorar? 🎉</h2>
+  <p class="reveal">Faça sua encomenda pelo WhatsApp — respondemos rapidinho!</p>
+  <a href="https://wa.me/message/HJMCX66AEZMXF1" class="btn-primary reveal" style="border-color:var(--wine)">Chamar no WhatsApp agora 🎉</a>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p style="font-size:1.5rem; margin-bottom:8px;">🎉 Kits Comemore</p>
+  <p><a href="https://www.instagram.com/kitscomemore/" target="_blank" rel="noopener">@kitscomemore</a></p>
+  <p><a href="tel:+5531999613941">(31) 99961-3941</a></p>
+  <p style="margin-top:12px; opacity:0.75">Viçosa, MG — Encomendas com antecedência</p>
+  <p style="margin-top:8px; opacity:0.6; font-size:0.8rem">© 2025 Kits Comemore — Feito com 💛 em Viçosa</p>
+</footer>
+
+<!-- ===== FLOATING WHATSAPP ===== -->
+<a href="https://wa.me/message/HJMCX66AEZMXF1" class="wa-float" aria-label="Fazer pedido no WhatsApp">
+  <span class="wa-label">Fazer pedido</span>
+  <div class="wa-btn">
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15 2C8.373 2 3 7.373 3 14c0 2.197.626 4.248 1.713 5.984L3 27l7.245-1.683A11.94 11.94 0 0015 26c6.627 0 12-5.373 12-12S21.627 2 15 2z" fill="#FFFFFF"/>
+      <path d="M21.5 18.5c-.3.8-1.5 1.5-2.1 1.6-.6.1-1.3.1-4.1-1.4-3.4-1.8-5.6-5.3-5.8-5.5-.2-.3-1.4-1.9-1.4-3.6 0-1.7.9-2.5 1.2-2.8.3-.3.7-.4 1-.4h.7c.3 0 .6.1.8.6l1.1 2.7c.1.3.1.6-.1.8l-.6.7c-.1.2-.2.4-.1.6.3.6.9 1.5 1.7 2.3.9.9 1.9 1.5 2.5 1.8.2.1.4.1.5-.1l.7-.8c.2-.3.5-.3.8-.2l2.6 1.2c.4.2.5.4.5.7v.8z" fill="#25D366"/>
+    </svg>
+  </div>
+</a>
+
+<script>
+// Intersection Observer for scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const delay = el.dataset.delay || 0;
+      setTimeout(() => {
+        el.classList.add('visible');
+      }, delay);
+      observer.unobserve(el);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+// Stagger grid children
+document.querySelectorAll('.reveal, .reveal-scale').forEach((el, i) => {
+  observer.observe(el);
+});
+
+// Stagger carousel items
+document.querySelectorAll('.carousel').forEach(carousel => {
+  const imgs = carousel.querySelectorAll('.reveal-scale');
+  imgs.forEach((img, i) => {
+    img.dataset.delay = i * 80;
+  });
+});
+</script>
+</body>
+</html>
